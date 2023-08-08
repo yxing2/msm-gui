@@ -1,29 +1,38 @@
 <h1>
   List of all directors
 </h1>
+<hr>
+<form action ="/insert_director_record" method="post">
+
+<div>
+<label for="name_field">Name</label>
+<input id="name_field" type="text" name="the_director_name">
+</div>
+<div>
+<label for="dob_field">Dob</label>
+<input id="dob_field" type="text" name="the_director_dob">
+</div>
+<div>
+<label for="bio_field">Bio</label>
+<input id="bio_field" type="text" name="the_director_bio">
+</div>
+<label for="image_field">Image</label>
+<input id="image_field" type="text"name="the_director_image">
+</div>
+<div>
+<button>Create director</button>
+</div>
+</form>
 
 <hr>
 
 <table border="1">
   <tr>
-    <th>
-      ID
-    </th>
-
-    <th>
-      Image
-    </th>
-
-    <th>
-      Name
-    </th>
-
-    <th>
-      Dob
-    </th>
-
-    <th>
-    </th>
+    <th>ID</th>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Dob</th>
+    <th></th>
   </tr>
 
   <% @list_of_directors.each do |director| %>

@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
-   def update
+   
+  def update
     m_id = params.fetch("the_id")
   
     matching_records = Movie.where({:id => m_id})
